@@ -1,4 +1,4 @@
-# Challenge NimbleGravity – Postulación a Empleo (React)
+# Challenge NimbleGravity – Postulación a Empleo
 
 Aplicación desarrollada en React que consume una API para:
 
