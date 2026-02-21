@@ -1,0 +1,143 @@
+/* ===== Reset básico ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fa;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+
+  /* Centrado real */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Cambiar a center si querés centrado vertical total */
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+/* ===== Layout ===== */
+
+.page {
+  width: 100%;
+  max-width: 700px; /* Más compacto y centrado */
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.titulo-principal {
+  margin: 0 0 12px 0;
+  font-size: 28px;
+}
+
+.titulo-secundario {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+/* ===== Formularios ===== */
+
+.fila {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  outline: none;
+}
+
+.boton {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.boton:hover {
+  background: #4338ca;
+}
+
+.boton:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+
+/* ===== Lista de trabajos ===== */
+
+.lista-trabajos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.trabajo {
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 18px;
+  background: #fafafa;
+  transition: all 0.2s ease;
+}
+
+.trabajo:hover {
+  background: #ffffff;
+  border-color: #ddd;
+}
+
+.trabajo h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* ===== Mensajes ===== */
+
+.mensaje-info {
+  margin-top: 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+.mensaje-error {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.mensaje-exito {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
