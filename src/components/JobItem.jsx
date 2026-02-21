@@ -25,11 +25,13 @@ export default function JobItem({ job, candidate }) {
       setSubmitting(true);
 
       const res = await applyToJob({
-        uuid: candidate.uuid,
-        jobId: job.id,
-        candidateId: candidate.candidateId,
-        repoUrl: repoUrl.trim(),
-      });
+            uuid: candidate.uuid,
+            jobId: job.id,
+            candidateId: candidate.candidateId,
+            applicationId: candidate.applicationId,
+            repoUrl: repoUrl.trim(),
+        });
+
 
       if (res?.ok) {
         setMensaje("Postulación enviada correctamente ✅");

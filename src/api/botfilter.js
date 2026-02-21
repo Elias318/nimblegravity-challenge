@@ -43,9 +43,9 @@ export function getJobs() {
 }
 
 // Step 5
-export function applyToJob({ uuid, jobId, candidateId, repoUrl }) {
+export function applyToJob({ uuid, jobId, candidateId, applicationId, repoUrl }) {
   return request(`/api/candidate/apply-to-job`, {
     method: "POST",
-    body: JSON.stringify({ uuid, jobId, candidateId, repoUrl }),
+    body: JSON.stringify({ uuid, jobId, candidateId, applicationId, repoUrl }),
   });
 }
